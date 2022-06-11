@@ -1,0 +1,10 @@
+<%- include('../partiel/header')  %>
+
+
+<% for( let index = 0; index < report.length; index++ ) { %>
+    <div class="reportCard">
+        <%= report[index]["details"] %> 
+    </div>
+<% } %>
+
+<%- include('../partiel/footer') %>

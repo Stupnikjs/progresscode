@@ -1,0 +1,40 @@
+<%- include('../partiel/header')  %>
+<div class="container">
+    <form action="/profile/form/objectif" id="objectifForm" method="POST">
+        
+        <label for="objectifText"> Objectif</label>
+
+        <input type="text" name="objectifText">
+        <label for="joursObjectif"></label>
+        <input type="number" name="joursObjectif">
+        <button class="" type="submit"> Valider</button>
+    </form>
+
+    <form action="/profile/form/report" id="stuckingReport" method="POST">
+        <label for="titleReport"> Titre du blocage</label>
+        <input type="text" name="titleReport">
+        <label class="" for="report">Decris le problème rencontré</label>
+        <textarea name="report" id="" cols="30" rows="10"></textarea>
+        <label for="success">Problème resolu</label>
+        <div class="checkBoxes">
+        <input type="checkbox" id="checkbox" name="success">
+        
+        </div>
+        <button type="submit">Valider</button>
+    </form>
+
+    <form action="/profile/form/info" id="infoForm" method="POST">
+        <label for="titleInfo"> Titre du rappel</label>
+        <input type="text" name="titleInfo">
+        <label for="categorie"> categorie</label>
+        <input type="text" name="categorie">
+        <label class="" for="info">Decris le rappel</label>
+        <textarea name="info" id="" cols="30" rows="10"></textarea>
+        <label for="success">Problème resolu</label>
+        <button type="submit">Valider</button>
+    </form>
+    
+
+</div>
+
+<%- include('../partiel/footer') %>

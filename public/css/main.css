@@ -1,0 +1,212 @@
+/* @mixin borderRadius{
+    border: solid 1px ;
+    border-radius: 3px;
+
+} */
+
+
+:root{--bgbrown: rgba(161, 120, 120, 0.856); 
+}
+
+body{
+background-color: var(--bgbrown);
+
+}
+
+.btn{
+color: black;
+
+}
+
+.navbar{
+
+    height: 30px;
+    border: 0.1px solid ;
+   
+
+
+}
+
+
+
+.nav-text{
+
+    font-size: smaller; 
+
+}
+
+
+h1,h2,h3,h4 {
+    font-size:small ;
+
+
+}
+.nav-text{
+    color: rgb(112, 100, 100);
+
+
+}
+
+.container{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content:space-around;
+    max-width: 100%;
+    
+
+}
+
+.section{
+
+       height: 600px;
+       width: 70%; 
+       margin: auto;
+       margin-top: 3%;
+
+
+}
+
+.content{
+    
+    width: 40%;
+    background-color: rgb(235, 235, 240);
+    @include borderRadius(); 
+    margin-left: 2% ;
+    margin-right: 2%;
+    border: solid 1px ;
+    border-radius: 3px;
+}
+
+form {
+margin-top: 2%;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: small;
+color: black;
+
+}
+
+.btn-success{
+    margin-top: 2%;
+
+}
+h1 {
+text-align: center;
+
+}
+
+.calendarBox{
+display: flex;
+flex-direction: column;
+width: 50%;
+
+
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 15% 15% 14% ;
+    grid-template-rows: 10% 16% 16% 16% 16% 16% ;
+    height: 200px;
+
+}
+
+.moisCard{
+    text-align: center;
+    background-color: rgb(235, 235, 240);
+    @include borderRadius(); 
+
+}
+.dayBox {
+    background-color: rgb(89, 89, 228);
+    @include borderRadius(); 
+}
+
+.ceJour {
+    background-color: rgb(139, 139, 221);
+    color: rgb(83, 79, 79);
+
+
+}
+.dayBox:hover{
+    background-color: rgb(139, 139, 221);
+    color: rgb(83, 79, 79);
+
+}
+
+.dayCard {
+
+    background-color: rgb(235, 235, 240);
+    @include borderRadius(); 
+    text-align: center; 
+    -webkit-text-fill-color: rgb(60, 68, 68);
+    font-size: 0.7em;
+    }
+
+.d-none {
+
+    display: none;
+
+}
+
+#changerMois{
+    background-color: rgb(235, 235, 240);
+    @include borderRadius(); 
+    margin-bottom: 1%;
+
+
+
+    }
+
+.objectif{
+    font-weight: 100;
+}
+
+.objectifMois{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: var(--bgbrown);
+    height: 15%;
+    font-size: x-small;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: black;
+    }
+    
+
+
+.btnSupprimer {
+        border-radius: 30px;
+        border: solid 1px black;
+
+    }
+
+.footer {
+text-align: center;
+
+
+}
+
+.dateObjectif {
+    font-size: xx-small;
+    background-color: rgb(0, 0, 0);
+    
+    color: white;
+}
+
+.checkBoxes {
+    display: inline;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+
+}
+
+.reportCard
