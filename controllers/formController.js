@@ -51,7 +51,7 @@ const postReport = async(req, res) => {
 const postInfo = async(req, res) => {
     const {titleInfo, info, categorie} = req.body;
     console.log(req.body)
- const infoToSave = new reportSchema({
+ const infoToSave = new infoSchema({
      _id : new mongoose.Types.ObjectId(),
      date : new Date(), 
      titleInfo : titleInfo, 
@@ -59,6 +59,7 @@ const postInfo = async(req, res) => {
      categorie: categorie 
  }); 
  try{
+     console.log(infoToSave)
      await infoToSave.save()
      res.redirect('/profile')
 

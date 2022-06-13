@@ -20,6 +20,6 @@ profileRouteur.get('/', authenticateToken, getprofile)
 profileRouteur.post('/:id', deleteObjectif)
 profileRouteur.post('/form/objectif', postObjectif)
 profileRouteur.post('/form/report', postReport )
-profileRouteur.post('/form/info', postReport )
+profileRouteur.post('/form/info', postInfo )
 
 module.exports = profileRouteur

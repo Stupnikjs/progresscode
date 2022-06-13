@@ -1,6 +1,10 @@
 <%- include('../partiel/header')  %>
 <div class="container">
-    <form action="/profile/form/objectif" id="objectifForm" method="POST">
+    <button class="btnDnone btn btn-light" id="btnObjectif">Enregistrer un objectif</button>
+    <button class="btnDnone btn btn-light" id="btnReport">Enregister un rapport de blocage</button>
+    <button class="btnDnone btn btn-light" id="btnInfo">Enregistrer un rappel</button>
+
+    <form action="/profile/form/objectif" id="formObjectif" method="POST" class="formPage d-none">
         
         <label for="objectifText"> Objectif</label>
 
@@ -10,7 +14,7 @@
         <button class="" type="submit"> Valider</button>
     </form>
 
-    <form action="/profile/form/report" id="stuckingReport" method="POST">
+    <form action="/profile/form/report" id="formReport" method="POST" class="formPage d-none">
         <label for="titleReport"> Titre du blocage</label>
         <input type="text" name="titleReport">
         <label class="" for="report">Decris le problème rencontré</label>
@@ -23,18 +27,17 @@
         <button type="submit">Valider</button>
     </form>
 
-    <form action="/profile/form/info" id="infoForm" method="POST">
+    <form class="formPage d-none" action="/profile/form/info" id="formInfo" method="POST">
         <label for="titleInfo"> Titre du rappel</label>
         <input type="text" name="titleInfo">
         <label for="categorie"> categorie</label>
         <input type="text" name="categorie">
         <label class="" for="info">Decris le rappel</label>
         <textarea name="info" id="" cols="30" rows="10"></textarea>
-        <label for="success">Problème resolu</label>
         <button type="submit">Valider</button>
     </form>
     
 
 </div>
-
+<script src="/jsClient/form.js" defer></script>
 <%- include('../partiel/footer') %>

@@ -1,0 +1,15 @@
+.infoCard {
+    background-color: black;
+    color: $formFontColor;
+    max-height: 20%;
+    max-width: 45%;
+    @include borderRadius();
+    font-size: small;
+    .dateInfo{
+        font-size: x-small;
+        background-color: brown;
+        text-align: center;
+        font-weight: bold;
+        color: bisque;
+    }
+}

@@ -1,212 +1,202 @@
-/* @mixin borderRadius{
-    border: solid 1px ;
-    border-radius: 3px;
-
-} */
-
-
-:root{--bgbrown: rgba(161, 120, 120, 0.856); 
-}
-
-body{
-background-color: var(--bgbrown);
-
-}
-
-.btn{
-color: black;
-
-}
-
-.navbar{
-
-    height: 30px;
-    border: 0.1px solid ;
-   
-
-
-}
-
-
-
-.nav-text{
-
-    font-size: smaller; 
-
-}
-
-
-h1,h2,h3,h4 {
-    font-size:small ;
-
-
-}
-.nav-text{
-    color: rgb(112, 100, 100);
-
-
-}
-
-.container{
-    margin-top: 2%;
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-    justify-content:space-around;
-    max-width: 100%;
-    
-
-}
-
-.section{
-
-       height: 600px;
-       width: 70%; 
-       margin: auto;
-       margin-top: 3%;
-
-
-}
-
-.content{
-    
-    width: 40%;
-    background-color: rgb(235, 235, 240);
-    @include borderRadius(); 
-    margin-left: 2% ;
-    margin-right: 2%;
-    border: solid 1px ;
-    border-radius: 3px;
-}
-
-form {
-margin-top: 2%;
-display: flex;
-flex-direction: column;
-align-items: center;
-font-size: small;
-color: black;
-
-}
-
-.btn-success{
-    margin-top: 2%;
-
-}
-h1 {
-text-align: center;
-
-}
-
-.calendarBox{
-display: flex;
-flex-direction: column;
-width: 50%;
-
-
+.calendarBox {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .gridBox {
-    display: grid;
-    grid-template-columns: 14% 14% 14% 14% 15% 15% 14% ;
-    grid-template-rows: 10% 16% 16% 16% 16% 16% ;
-    height: 200px;
-
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14% 15% 15% 14%;
+  grid-template-rows: 10% 16% 16% 16% 16% 16%;
+  height: 200px;
 }
 
-.moisCard{
-    text-align: center;
-    background-color: rgb(235, 235, 240);
-    @include borderRadius(); 
-
+.moisCard {
+  text-align: center;
+  background-color: rgb(235, 235, 240);
+  border: solid 1px;
+  border-radius: 3px;
 }
+
 .dayBox {
-    background-color: rgb(89, 89, 228);
-    @include borderRadius(); 
+  background-color: rgb(89, 89, 228);
+  border: solid 1px;
+  border-radius: 3px;
 }
 
 .ceJour {
-    background-color: rgb(139, 139, 221);
-    color: rgb(83, 79, 79);
-
-
+  background-color: rgb(139, 139, 221);
+  color: rgb(83, 79, 79);
 }
-.dayBox:hover{
-    background-color: rgb(139, 139, 221);
-    color: rgb(83, 79, 79);
 
+.dayBox:hover {
+  background-color: rgb(139, 139, 221);
+  color: rgb(83, 79, 79);
+}
+
+#changerMois {
+  background-color: rgb(235, 235, 240);
+  border: solid 1px;
+  border-radius: 3px;
+  margin-bottom: 1%;
+}
+
+.formPage {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+  color: rgba(167, 149, 149, 0.856);
+  padding: 2% 2%;
+  background-color: rgb(235, 235, 240);
+  border: solid 1px;
+  border-radius: 3px;
+  box-shadow: 0.55em 0.55em;
+}
+.formPage button {
+  background-color: rgba(167, 149, 149, 0.856);
+  border: solid 1px;
+  border-radius: 3px;
+}
+
+.objectifCard {
+  background-color: rgb(235, 235, 240);
+  border: solid 1px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.infoCard {
+  background-color: black;
+  color: rgba(167, 149, 149, 0.856);
+  max-height: 20%;
+  max-width: 45%;
+  border: solid 1px;
+  border-radius: 3px;
+  font-size: small;
+}
+.infoCard .dateInfo {
+  font-size: x-small;
+  background-color: brown;
+  text-align: center;
+  font-weight: bold;
+  color: bisque;
+}
+
+:root {
+  --bgbrown: rgba(161, 120, 120, 0.856);
+}
+
+body {
+  background-color: var(--bgbrown);
+}
+
+.btn {
+  color: rgb(14, 13, 13);
+}
+
+.navbar {
+  height: 30px;
+  border: 0.1px solid;
+}
+
+.nav-text {
+  font-size: smaller;
+}
+
+h1, h2, h3, h4 {
+  font-size: small;
+}
+
+.nav-text {
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.section {
+  height: 600px;
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.content {
+  width: 40%;
+  background-color: rgb(235, 235, 240);
+  border: solid 1px;
+  border-radius: 3px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.btn-success {
+  margin-top: 2%;
+}
+
+h1 {
+  text-align: center;
 }
 
 .dayCard {
-
-    background-color: rgb(235, 235, 240);
-    @include borderRadius(); 
-    text-align: center; 
-    -webkit-text-fill-color: rgb(60, 68, 68);
-    font-size: 0.7em;
-    }
+  background-color: rgb(235, 235, 240);
+  border: solid 1px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-text-fill-color: rgb(60, 68, 68);
+  font-size: 0.7em;
+}
 
 .d-none {
-
-    display: none;
-
+  display: none;
 }
 
-#changerMois{
-    background-color: rgb(235, 235, 240);
-    @include borderRadius(); 
-    margin-bottom: 1%;
-
-
-
-    }
-
-.objectif{
-    font-weight: 100;
+.objectif {
+  font-weight: 100;
 }
 
-.objectifMois{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background: var(--bgbrown);
-    height: 15%;
-    font-size: x-small;
-    border: 1px solid black;
-    border-radius: 3px;
-    margin-left: 2%;
-    margin-right: 2%;
-    color: black;
-    }
-    
-
+.objectifMois {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: var(--bgbrown);
+  height: 15%;
+  font-size: x-small;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: black;
+}
 
 .btnSupprimer {
-        border-radius: 30px;
-        border: solid 1px black;
-
-    }
+  border-radius: 30px;
+  border: solid 1px black;
+}
 
 .footer {
-text-align: center;
-
-
+  text-align: center;
 }
 
 .dateObjectif {
-    font-size: xx-small;
-    background-color: rgb(0, 0, 0);
-    
-    color: white;
+  font-size: xx-small;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .checkBoxes {
-    display: inline;
-    margin-top: 2%;
-    margin-bottom: 2%;
-
-
+  display: inline;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-.reportCard
+/*# sourceMappingURL=main.css.map */

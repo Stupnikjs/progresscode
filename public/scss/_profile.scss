@@ -1,0 +1,8 @@
+$lightColor: rgb(235, 235, 240); 
+
+.objectifCard {
+    background-color:$lightColor ;
+    @include borderRadius(); 
+    font-weight:500; 
+
+}

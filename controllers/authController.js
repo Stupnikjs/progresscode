@@ -20,8 +20,7 @@ const authenticateToken = (req, res, next) => {
     const authHeader = req.cookies["auth"]; 
     
     var token = authHeader.split('.')[1]; 
-    if (token == null) return res.sendStatus(401)
-    console.log(jwt.verify(authHeader, process.env.SECRET_KEY)); 
+    if (token == null) return res.sendStatus(401); 
     jwt.verify(authHeader, process.env.SECRET_KEY, (err) => {
       if (err) {console.log(err) ; res.redirect('/')}
       else next()

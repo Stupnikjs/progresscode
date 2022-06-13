@@ -1,0 +1,52 @@
+@mixin borderRadius{
+    border: solid 1px ;
+    border-radius: 3px;
+ }
+
+
+.calendarBox{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+     
+}
+
+
+.gridBox {
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 15% 15% 14% ;
+    grid-template-rows: 10% 16% 16% 16% 16% 16% ;
+    height: 200px;
+
+}
+
+
+.moisCard{
+    text-align: center;
+    background-color: rgb(235, 235, 240);
+    @include borderRadius(); 
+
+}
+
+.dayBox {
+    background-color: rgb(89, 89, 228);
+    @include borderRadius(); 
+}
+
+.ceJour {
+    background-color: rgb(139, 139, 221);
+    color: rgb(83, 79, 79);
+
+
+}
+.dayBox:hover{
+    background-color: rgb(139, 139, 221);
+    color: rgb(83, 79, 79);
+
+}
+
+#changerMois{
+    background-color: rgb(235, 235, 240);
+    @include borderRadius(); 
+    margin-bottom: 1%;
+    }

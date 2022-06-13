@@ -1,0 +1,24 @@
+$formBgColor:  rgba(87, 70, 70, 0.856); 
+$formFontColor:  rgba(167, 149, 149, 0.856); 
+$lightColor: rgb(235, 235, 240); 
+
+
+.formPage {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    color: $formFontColor;
+    padding: 2% 2%;
+    background-color:$lightColor; 
+    @include borderRadius(); 
+    box-shadow: 0.55em 0.55em;
+    button {
+        background-color: $formFontColor ;
+        @include borderRadius(); 
+
+    }
+
+    }
+    

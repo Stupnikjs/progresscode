@@ -1,10 +1,11 @@
 <%- include('../partiel/header')  %>
+<div class="container">
 
+    <% for( let index = 0; index < info.length; index++ ) { %>
+        <div class="infoCard">
+        <div class="dateInfo"><%= info[index]["date"].toLocaleDateString() %> </div>  <%= info[index]["details"] %> 
+        </div>
+    <% } %>
 
-<% for( let index = 0; index < info.length; index++ ) { %>
-    <div class="reportCard">
-        <%= report[index]["details"] %> 
-    </div>
-<% } %>
-
+</div>
 <%- include('../partiel/footer') %>

@@ -10,7 +10,7 @@
             <% for( let index = 0; index < objectif.length; index++ ) { %>
 
                 <form action="/profile/<%= objectif[index]['_id']%>/"   method="POST">
-                <p class="objectifCard"><%= objectif[index]['nom'] %> <span class="dateObjectif"> <%= dateObjectif[index] %>  </span><button type="submit" class="btnSupprimer" > X </button></p>
+                <p class="objectifCard"><%= objectif[index]['nom'] %> </span><button type="submit" class="btnSupprimer" ></button></p>
                 </form>
 
             <% } %>
