@@ -4,6 +4,7 @@ const reportSchema = require('../models/report.modele');
 const infoSchema = require('../models/info.modele');
 
 
+
 const getform  = async(req, res) =>{
     const selecteur = []
     const categories = await objectifSchema.find({}); 
@@ -18,7 +19,13 @@ const getform  = async(req, res) =>{
 
 
 const postObjectif = async(req, res) => {
-    const {objectifText} = req.body; 
+    let {objectifText} = req.body; 
+    let hasSpace = objectifText.includes(" ");
+    console.log(hasSpace) 
+    if(hasSpace){
+       objectifText = objectifText.trim();     
+    } 
+    console.log( " resultat : " + objectifText)
     const objectif = new objectifSchema({
         _id : new mongoose.Types.ObjectId(),
         date : new Date(), 

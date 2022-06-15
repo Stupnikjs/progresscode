@@ -5,8 +5,8 @@
      
             <% for( let index = 0; index < objectif.length; index++ ) { %>
 
-                <form id="formDelete" action="/profile/<%= objectif[index]['_id']%>/"   method="POST">
-                    <a href="/profile/fiche/<%= objectif[index]['nom'] %>"><p class="objectifCard"><%= objectif[index]['nom'] %> </span><button type="submit" class="btnSupprimer" ></button></p></a>
+                <form class="objectifCard" id="formDelete" action="/profile/<%= objectif[index]['_id']%>/"   method="POST">
+                    <a href="/profile/fiche/<%= objectif[index]['nom'] %>"><%= objectif[index]['nom'] %> <button type="submit" class="btnSupprimer btn-success" ></button></a>
                 </form>
 
             <% } %>

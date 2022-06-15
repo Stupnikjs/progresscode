@@ -6,6 +6,7 @@
 
  $lightColor: rgb(235, 235, 240);
  $indicatorColor: rgb(134, 134, 209);
+ $dayBoxColor: rgb(89, 89, 228);
 
 @import 'calendrier.scss'; 
 @import '_page/form.scss'; 
@@ -86,8 +87,8 @@ h1,h2,h3,h4 {
 
 
 .btnSupprimer {
-        border-radius: 30px;
-        border: solid 1px black;
+       text-align: center;
+      /*bootstrap*/
 
     }
 

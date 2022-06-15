@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon serveur.js",
-    "sass": "sass --watch ./public/scss/_main.scss:./public/css/main.css"  
+    "sass": "sass --watch ./public/scss/_main.scss:./public/css/main.css"
   },
   "keywords": [],
   "author": "",
