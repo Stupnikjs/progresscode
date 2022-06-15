@@ -2,11 +2,15 @@
 
 <h1 class="ficheTitle"> <%= fiche.nom.toUpperCase()  %>  </h1>
 
-<% for( let index = 0; index < infoList.length; index++ ) { %>
-    <p> <%= infoList[index]['details'] %></p>
+<div class="ficheContainer">
+    <% for( let index = 0; index < infoList.length; index++ ) { %>
+        <div class="ficheCard"> <%= infoList[index]['details'] %> <span class="ficheItemTitre"><%= infoList[index]['titre'] %> </span></div>
 
 
-<% } %>
+    <% } %>
+
+
+</div>
 
 
 <%- include('../partiel/footer') %>

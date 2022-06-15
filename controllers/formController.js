@@ -57,11 +57,11 @@ const postReport = async(req, res) => {
 }
 const postInfo = async(req, res) => {
     const {titleInfo, info, categorie} = req.body;
-
+    console.log(req.body)
  const infoToSave = new infoSchema({
      _id : new mongoose.Types.ObjectId(),
      date : new Date(), 
-     titleInfo : titleInfo, 
+     titre : titleInfo, 
      details : info, 
      categorie: categorie 
  }); 

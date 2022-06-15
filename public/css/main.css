@@ -101,10 +101,6 @@
   flex-wrap: wrap;
 }
 
-.dateBox {
-  background-color: rgb(235, 235, 240);
-}
-
 #formDelete {
   width: 50%;
 }
@@ -132,21 +128,57 @@
   color: rgb(43, 40, 37);
 }
 
-.ficheTitle {
+.ficheContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ficheContainer .ficheCard {
+  background-color: rgb(235, 235, 240);
+  border: solid 1px;
+  border-radius: 3px;
+  margin-top: 2%;
+  font-size: 0.76em;
+  color: black;
+  padding: 0.8em 0.8em;
+  box-shadow: 0.55em 0.55em 0.55em rgb(238, 236, 236);
+}
+.ficheContainer .ficheCard .ficheTitle {
   font-size: larger;
+}
+.ficheContainer .ficheCard .ficheItemTitre {
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+.menu {
+  position: relative;
+  background-color: rgb(235, 235, 240);
+  display: flex;
+}
+.menu a {
+  padding: 0.5em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.menu a[aria-selected] {
+  color: rgb(134, 134, 209);
+}
+
+.indicator {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 4px;
+  width: 100px;
+  background-color: rgb(134, 134, 209);
+  border-radius: 4px;
+  transform-origin: 0 0;
 }
 
 .btn {
   color: rgb(14, 13, 13);
-}
-
-.navbar {
-  height: 30px;
-  border: 0.1px solid;
-}
-
-.nav-text {
-  font-size: smaller;
 }
 
 h1, h2, h3, h4 {

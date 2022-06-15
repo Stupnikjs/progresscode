@@ -1,0 +1,38 @@
+
+
+.ficheContainer{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .ficheCard{
+
+        background-color:  $lightColor;
+        @include borderRadius(); 
+        margin-top: 2%; 
+        font-size: 0.76em;
+        color: black;
+        padding: 0.8em 0.8em;
+        box-shadow: 0.55em 0.55em 0.55em rgb(238, 236, 236);
+        .ficheTitle{
+    
+            font-size: larger;
+            
+            }
+        .ficheItemTitre{
+            font-size: 0.5em;
+            font-weight: bold;
+            
+            }
+    
+    
+    }
+    
+    
+
+
+
+
+}
+
