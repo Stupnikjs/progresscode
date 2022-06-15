@@ -41,13 +41,34 @@
   margin-bottom: 1%;
 }
 
+.btn-success {
+  margin-top: 2%;
+}
+
+.dayCard {
+  background-color: rgb(235, 235, 240);
+  border: solid 1px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-text-fill-color: rgb(60, 68, 68);
+  font-size: 0.7em;
+  height: 32px;
+}
+
+.dateBox {
+  background-color: rgb(235, 235, 240);
+  border: solid 1px;
+  border-radius: 3px;
+  height: 100%;
+}
+
 .formPage {
   margin-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: small;
-  color: rgba(167, 149, 149, 0.856);
+  color: rgba(82, 76, 76, 0.856);
   padding: 2% 2%;
   background-color: rgb(235, 235, 240);
   border: solid 1px;
@@ -55,41 +76,64 @@
   box-shadow: 0.55em 0.55em;
 }
 .formPage button {
-  background-color: rgba(167, 149, 149, 0.856);
+  background-color: rgba(82, 76, 76, 0.856);
   border: solid 1px;
   border-radius: 3px;
 }
 
 .objectifCard {
-  background-color: rgb(235, 235, 240);
+  background-color: rgb(90, 53, 194);
   border: solid 1px;
   border-radius: 3px;
   font-weight: 500;
+  color: rgb(202, 178, 39);
 }
 
-.infoCard {
-  background-color: black;
-  color: rgba(167, 149, 149, 0.856);
-  max-height: 20%;
-  max-width: 45%;
+.content {
+  width: 40%;
+  background-color: rgb(235, 235, 240);
   border: solid 1px;
   border-radius: 3px;
-  font-size: small;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.infoCard .dateInfo {
+
+.dateBox {
+  background-color: rgb(235, 235, 240);
+}
+
+#formDelete {
+  width: 50%;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 100%;
+}
+.infoContainer .infoCard {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.66em;
+  color: rgb(14, 10, 8);
+  min-height: 100px;
+  margin: 2% 2%;
+  border: 1.5px solid;
+  border-radius: 5px;
+}
+.infoContainer .infoCard .dateInfo {
   font-size: x-small;
-  background-color: brown;
-  text-align: center;
-  font-weight: bold;
-  color: bisque;
+  color: rgb(43, 40, 37);
 }
 
-:root {
-  --bgbrown: rgba(161, 120, 120, 0.856);
-}
-
-body {
-  background-color: var(--bgbrown);
+.ficheTitle {
+  font-size: larger;
 }
 
 .btn {
@@ -122,60 +166,8 @@ h1, h2, h3, h4 {
   max-width: 100%;
 }
 
-.section {
-  height: 600px;
-  width: 70%;
-  margin: auto;
-  margin-top: 3%;
-}
-
-.content {
-  width: 40%;
-  background-color: rgb(235, 235, 240);
-  border: solid 1px;
-  border-radius: 3px;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.btn-success {
-  margin-top: 2%;
-}
-
-h1 {
-  text-align: center;
-}
-
-.dayCard {
-  background-color: rgb(235, 235, 240);
-  border: solid 1px;
-  border-radius: 3px;
-  text-align: center;
-  -webkit-text-fill-color: rgb(60, 68, 68);
-  font-size: 0.7em;
-}
-
 .d-none {
   display: none;
-}
-
-.objectif {
-  font-weight: 100;
-}
-
-.objectifMois {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background: var(--bgbrown);
-  height: 15%;
-  font-size: x-small;
-  border: 1px solid black;
-  border-radius: 3px;
-  margin-left: 2%;
-  margin-right: 2%;
-  color: black;
 }
 
 .btnSupprimer {

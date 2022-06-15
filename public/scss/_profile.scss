@@ -1,8 +1,37 @@
 $lightColor: rgb(235, 235, 240); 
 
 .objectifCard {
-    background-color:$lightColor ;
+    background-color: rgb(90, 53, 194) ;
     @include borderRadius(); 
     font-weight:500; 
+    color: rgb(202, 178, 39);
 
 }
+
+.content{
+    
+    width: 40%;
+    background-color: rgb(235, 235, 240);
+    @include borderRadius(); 
+    margin-left: 2% ;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+
+    
+}
+
+.dateBox{
+ background-color: $lightColor;
+
+
+}
+
+#formDelete{
+    width: 50%;
+
+}
+

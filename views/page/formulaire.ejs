@@ -31,7 +31,11 @@
         <label for="titleInfo"> Titre du rappel</label>
         <input type="text" name="titleInfo">
         <label for="categorie"> categorie</label>
-        <input type="text" name="categorie">
+        <select name="categorie">
+            <% for( let index = 0; index < selecteur.length; index++ ) { %>
+            <option value="<%= selecteur[index] %>"><%= selecteur[index] %>  </option>
+            <% } %>
+        </select>
         <label class="" for="info">Decris le rappel</label>
         <textarea name="info" id="" cols="30" rows="10"></textarea>
         <button type="submit">Valider</button>

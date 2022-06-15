@@ -54,7 +54,6 @@ class Mois {
 
         for (var i = 1; i < this.nbJour + 1 ; i++){
             
-            const id = h1.id
             const dayBox = document.createElement('div'); 
             dayBox.classList.add('dayBox'); 
             dayBox.setAttribute('id', i ); 
@@ -67,7 +66,7 @@ class Mois {
             const date = jour+mois 
             
             // contenu de la case 
-            dayBox.innerHTML = `<a href='/profile/${id}/${date}'>${i}</a>`; 
+            dayBox.innerHTML = `<a href='/profile/${date}'>${i}</a>`; 
             
 
             if (ceJour === i ) dayBox.classList.add('ceJour');
@@ -101,13 +100,16 @@ const btnChangerMois = document.querySelector("#changerMois");
 
 
 const aujourdhui = new Date();
+console.log(aujourdhui)
 
 const dayOfWeek = aujourdhui.getDay(); 
 
  
 const ceMois = aujourdhui.getMonth(); 
 
+
 const moisEnCours = new Mois(ceMois); 
+console.log(moisEnCours)
 moisEnCours.afficherMois(gridBox, aujourdhui); 
 
 

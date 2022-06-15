@@ -1,0 +1,12 @@
+<%- include('../partiel/header')  %>
+
+<h1 class="ficheTitle"> <%= fiche.nom.toUpperCase()  %>  </h1>
+
+<% for( let index = 0; index < infoList.length; index++ ) { %>
+    <p> <%= infoList[index]['details'] %></p>
+
+
+<% } %>
+
+
+<%- include('../partiel/footer') %>

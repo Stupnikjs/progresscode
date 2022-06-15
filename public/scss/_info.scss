@@ -1,15 +1,29 @@
-.infoCard {
-    background-color: black;
-    color: $formFontColor;
-    max-height: 20%;
-    max-width: 45%;
-    @include borderRadius();
-    font-size: small;
-    .dateInfo{
-        font-size: x-small;
-        background-color: brown;
-        text-align: center;
-        font-weight: bold;
-        color: bisque;
+
+.infoContainer{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    max-height: 100%;
+    .infoCard {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: rgb(255, 255, 255);
+        font-size: 0.66em;
+        color: rgb(14, 10, 8);
+        min-height: 100px;
+        margin: 2% 2%;
+        border: 1.5px solid ;
+        border-radius: 5px;
+        
+        .dateInfo{
+            font-size: x-small;
+            color: rgb(43, 40, 37);
+        }
     }
+
+
+
 }
+

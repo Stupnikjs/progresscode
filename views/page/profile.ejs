@@ -2,20 +2,16 @@
 
 <div class="container">
     <div class="content">
-        <h1> Bienvenue Nicolas</h1>
-
-        <h2 class="objectif" >Objectifs</h2>
-
-        <div class="objectifMois">
+     
             <% for( let index = 0; index < objectif.length; index++ ) { %>
 
-                <form action="/profile/<%= objectif[index]['_id']%>/"   method="POST">
-                <p class="objectifCard"><%= objectif[index]['nom'] %> </span><button type="submit" class="btnSupprimer" ></button></p>
+                <form id="formDelete" action="/profile/<%= objectif[index]['_id']%>/"   method="POST">
+                    <a href="/profile/fiche/<%= objectif[index]['nom'] %>"><p class="objectifCard"><%= objectif[index]['nom'] %> </span><button type="submit" class="btnSupprimer" ></button></p></a>
                 </form>
 
             <% } %>
             
-        </div>   
+     
         
     </div>    
     <%- include('../partiel/calendar')  %>
